@@ -1,9 +1,40 @@
-/* * {
-    padding: 0;
-    margin: 0;
+* {
+    margin: 10px;
     box-sizing: border-box;
-} */
+    text-align: left;
+}
 
 p {
     color: red;
+}
+
+h2 {
+    margin-left: 5rem;
+}
+
+.task-list {
+    list-style: none;
+    word-spacing: 2px;
+    /* text-align: justify; */
+}
+
+.task-new {
+    margin-bottom: 10px;
+    padding: 1rem 2rem;
+    border: 1px solid grey;
+}
+
+.task-id {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.task-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.task-body {
+    font-weight: lighter;
 }
