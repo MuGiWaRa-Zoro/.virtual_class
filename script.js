@@ -12,6 +12,9 @@
 // })
 
 // fetch api assignment
+function alertTitle(title){
+    alert(title)
+}
 fetch("https://jsonplaceholder.typicode.com/posts")
 .then((response)=>response.json())
 .then((data)=> {
@@ -19,7 +22,9 @@ fetch("https://jsonplaceholder.typicode.com/posts")
     const getPost = document.getElementById('task')
 
     for (let a = 0; a < data.length; a++){
-        getPost.innerHTML += `<li class="task-new" onclick="alert(${data[a].title})">
+        
+        getPost.innerHTML += `<li class="task-new" onclick="alertTitle('${data[a].title}')">
+
             <div class="task-id">${data[a].id}</div>
             <div class="task-title">${data[a].title}</div>
             <div class="task-body">${data[a].body}</div>
